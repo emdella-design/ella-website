@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- META DATA -->
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+         <!-- FAVICON -->
+         <link rel="shortcut icon" type="image/x-icon" href="../Image/x_images/favicon.png">
+
+         <!--PAGE TITLE-->
+         <title>Ella Daniels – Thrifted Clothing Archive</title>
+         <a href="proj1.html" title="Recipe Book"> </a>
+
+         <!-- PAGE LINKS -->
+          <link rel="stylesheet" href="../css/global.css">
+          <link rel="stylesheet" href="../css/nav.css">
+          <link rel="stylesheet" href="../css/hamburger.css">
+          <link rel="stylesheet" href="../css/media-queries.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+     
+
+         <!-- FONTS -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">          
+         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const toggles = document.querySelectorAll('.nav-toggle');
+        
+          toggles.forEach(toggle => {
+            const label = document.querySelector(`label[for="${toggle.id}"]`);
+        
+            label.addEventListener('click', function(e) {
+
+              if (toggle.checked) {
+                e.preventDefault(); 
+                toggle.checked = false;
+              }
+            });
+          });
+        });
+        </script>
+      <script>
+        document.addEventListener("mousemove", function(e) {
+          const sparkle = document.createElement("span");
+          sparkle.classList.add("mint-sparkle");
+          document.body.appendChild(sparkle);
+        
+          const size = Math.random() * 5 + 5; 
+          sparkle.style.width = size + "px";
+          sparkle.style.height = size + "px";
+          sparkle.style.left = e.pageX + "px";
+          sparkle.style.top = e.pageY + "px";
+          sparkle.style.setProperty("--scale", Math.random() * 0.4 + 0.9);
+        
+          sparkle.style.background = `
+            radial-gradient(circle,
+              #aad3be 0%,
+              #b8dcc7 30%,
+              #7eb99e 70%,
+              transparent 100%)
+          `;
+        
+          setTimeout(() => sparkle.remove(), 1600);
+        });
+        </script>
+    
+         <!--BODY -->
+         <body>
+            <!--PAGE WRAPPER-->
+           <main class="pgwrapper">
+
+                <!--INNER WRAPPER -->
+                <div class="inn-wrapper">
+        
+                    <header>
+
+                        <!-- HAMBURGER -->
+                        <input id="hamburger" type="checkbox">
+                        <div class="hamburger">
+                            <div class="rotate-wrapper"> <div class="line"></div> </div>
+                            <label for="hamburger"></label>
+                        </div>
+                        
+                           <!--PAGE HEADING-->
+                           <h1>
+                               <a href="../Image/index.html">Ella Daniels</a>
+                           </h1>
+
+                          
+
+                       <nav>
+                           <ul class="nav-wrapper">
+
+                               <!--NAV ITEM 1-->
+                               <li class="nav-item">
+                                   <a href="../Image/index.html">Design</a>
+                                   <input type="radio" id="toggle-design" name="toggle" class="nav-toggle">
+                                   <label for="toggle-design" class="chevron">
+                                       <span class="rotate-wrapper"></span>
+                                   </label>
+                                   <ul class="submenu">
+                                    <li><a href="../projs/proj1.html">Cipe Pineles – Artist Book</a></li>
+                                    <li><a href="../projs/proj2.html">Artbash 2026 Identity</a></li>
+                                    <li><a href="../projs/proj3.html">Mike's Pastry Redesign</a></li>
+                                    <li><a href="../projs/proj4.html">Recipes: Collected and Created</a></li>
+                                    <li><a href="../projs/proj5.html">Why You Should Own A House Plant</a></li>
+                                    <li class="last"><a href="../projs/proj6.html">Thrifted Clothing Archive</a></li>
+                                   </ul>
+                               </li>
+                         
+    
+                            <!--NAV ITEM 2 -->
+                               <li class="nav-item">
+                                   <a href="../archive/archive.html">Archive</a>
+                                   <input type="radio" id="toggle-archive" name="toggle" class="nav-toggle">
+                                   <label for="toggle-archive" class="chevron">
+                                       <span class="rotate-wrapper"></span>
+                                   </label>
+                                   <ul class="submenu">
+                                    <li><a href="../projs/archive1.html">Kokorokoko Logo</a></li>
+                                    <li><a href="../projs/archive2.html">Local Harvest Website Prototype</a></li>
+                                    <li><a href="../projs/archive3.html">Architecture Lecture Series</a></li>
+                                    <li><a href="../projs/archive4.html">Ocean Currents Infographic</a></li>
+                                    <li><a href="../projs/archive5.html">Design Your Destination</a></li>
+                                    <li class="last"><a href="../projs/archive6.html">A Summer of Art</a></li>
+                                   </ul>
+                               </li>
+
+                               <!--NAV ITEM 3 -->
+                               <li class="nav-item">
+                                   <a href="../art/art.html">Art</a>
+                                   <input type="radio" id="toggle-art" name="toggle" class="nav-toggle">
+                                   <label for="toggle-art" class="chevron">
+                                       <span class="rotate-wrapper"></span>
+                                   </label>
+                                   <ul class="submenu">
+                                       <li class="last"><a href="../art/art.html">Paintings & Drawings</a></li>
+                                   </ul>
+                               </li>
+
+                                <!--NAV ITEM 4 -->
+                               <li class="nav-item">
+                                   <a href="../about/about.html">About</a>
+                                   <input type="radio" id="toggle-about" name="toggle" class="nav-toggle">
+                                   <label for="toggle-about" class="chevron">
+                                       <span class="rotate-wrapper"></span>
+                                   </label>
+                                   <ul class="submenu">
+                                       <li><a href="#">Hi, I'm Ella! I am a graphic designer at the School of the Art Institute of Chicago. 
+                                       I have been in the design field for 3 years. I am interested in branding, art direction, 
+                                       and motion graphics.</a></li>
+                                       <li class="last"><a href="https://www.linkedin.com/in/ella-daniels-6514872a2/" target="_blank">LinkedIn</a></li>
+                                   </ul>
+                               </li>
+                       </nav>
+
+                       </header>
+    
+                <!--HERO-->
+                <div class="section-1">
+                    <figure class="img-wrapper-1">
+                        <img class="hero" src="../Image/x_images/outfit0.png" alt="">
+                    </figure>
+                </div>
+
+                <figure class="background-img">
+                    <img src="../Image/x_images/outfit00.png" alt="">
+                </figure>
+        
+
+                 <!--LABELS-->
+                <div class="desc">
+                    <ul class="titles">
+                    <li class="main-title">THRIFTED CLOTHING ARCHIVE</li>
+                    <li>5.25" x 3" cards</li>
+                    <li>Laser-print on Mohawk Milkweed<br>and Hammermill paper</li>
+                    <li>2025</li>
+                    </ul>
+                </div>
+
+                <!--DESC-->
+                <section class="hidden">
+                <div class="text-wrapper">
+                    <p>
+                    Sparked from my love of thrifting, this clothing archive is a narrative of the different outfits I style. The clothing drawer card holder 
+                    is inspired from vintage recipe card boxes with a spin on clothing. Within the 10 unique outfit header cards, each item of clothing has its 
+                    own card describing where I got it, who I got it with, and how I imagine the history of it to be. There are also cards describing the whole 
+                    outfit and why I wear it and what it reminds me of. The box was also thrifted for this project and was revamped from a jewelry box to an 
+                    outfit card holder. This involved stripping the varnish from the wood and sanding it down, creating a stencil for the title and filling it in with a marker, and then 
+                    staining and sealing the wood.
+                     </p>
+                </div>
+
+                <!--ADOBE ICONS-->
+                <div class="adobe">
+                    <ul>
+                        <li><img src="../Image/x_images/illustrator.png" ></li>
+                        <li><img src="../Image/x_images/indesign.png"> </li>
+                        <li><img src="../Image/x_images/photoshop.png"></li>
+                    </ul>
+                </div>
+                </section>
+
+                 <!--IMAGES-->
+                 <section class="hidden">
+                <div class="section-2">
+                    <figure class="img-wrapper-2"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/outfit1.png"
+                    >
+                        <img class="left" src="../Image/x_images/outfit1.png" alt="">
+                    </figure>
+
+                    <figure class="img-wrapper-2"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/outfit2.png"
+                    >
+                        <img class="right" src="../Image/x_images/outfit2.png" alt="">
+                    </figure>
+                </div>
+                 </section>
+
+                <!--DESC-->
+                <section class="hidden">
+                <div class="text-wrapper">
+                    <p>Here are some close-ups of the individual item cards, front and back. To make them cohesive, the backs of the cards (in gray) have all of the 
+                        pieces from the entire outfit to easily categorize them, illustrated via Adobe Illustrator. The selected clothing item that the card is describing 
+                        is highlighted on the back as well. Between the 10 outfits I designed 50 of these cards that are nested within the header cards.<br>
+                    </p>
+                </div>
+                </section>
+
+                 <!--IMAGES-->
+                 <section class="hidden">
+                <div class="section-1">
+                    <figure class="img-wrapper-1">
+                        <img class="outfit2" src="../Image/x_images/outfit3.png" alt="">
+                    </figure>
+                </div>
+
+                <!--DESC-->
+                <div class="text-wrapper">
+                    <p>Below is a photo of the header cards. They are folded in an envelope style which holds the individual item cards.</p>
+                </div>
+                 </section>
+
+                 <!--IMAGES-->
+                 <section class="hidden">
+                <div class="section-2">
+                    <figure class="img-wrapper-2"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/outfit4.png"
+                    >
+                        <img class="left" src="../Image/x_images/outfit4.png" alt="">
+                    </figure>
+
+                    <figure class="img-wrapper-2"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/outfit5.png"
+                    >
+                        <img class="right" src="../Image/x_images/outfit5.png" alt="">
+                    </figure>
+                </div>
+                 </section>
+
+                 <section class="hidden">
+                <div class="section-1">
+                    <figure class="img-wrapper-1"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/outfit6.png"
+                    >
+                        <img class="outfit6" src="../Image/x_images/outfit6.png" alt="">
+                    </figure>
+                </div>
+
+        
+                <!--BUTTON-->
+                <div class="button">
+                    <a href="proj1.html">Next Project</a>    
+                </div>     
+                 </section>
+
+        </div>
+    </main>
+              <!--FOOTER -->
+              <footer>    
+                <p>&#x1FAB4 Hand coded by Ella Daniels &#x1FAB4</p>
+            </footer> 
+    
+    </body>
+
+     <!-- JAVASCRIPT -->
+     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+     <script>
+       // documentation at https://fancyapps.com/fancybox/
+       Fancybox.bind("[data-fancybox]", {
+         // Transition effect when changing gallery items
+         Carousel: {
+           transition: "slide",
+         },
+         // Customize the toolbar
+         Toolbar: {
+           display: {
+             right: ["slideshow", "thumbs", "close"],
+           },
+         },
+       });
+     </script>
+         <script>
+            const sections = document.querySelectorAll('.hidden');
+    
+            const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); 
+                }
+            });
+            }, {
+            threshold: 0.2 
+            });
+    
+            sections.forEach(section => observer.observe(section));
+    </script>
+</html>
+
+      

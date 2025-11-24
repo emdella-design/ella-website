@@ -1,0 +1,49 @@
+/* Author: Ella Daniels
+*/
+/*
+=Common Elements
+============================================= */
+
+
+.about-desc {
+    padding-top: 15%;
+  }
+
+.likes {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    position: relative;
+    /* min-width: 500px; */
+}
+
+
+.about-section-2 {
+    display: flex; 
+    flex-wrap: wrap;
+    margin: 0 auto; 
+    justify-content: center;
+  }
+
+  .about-img-wrapper-2 {
+    box-sizing: border-box;
+    flex: 0 0 50%;  
+    margin: 0 auto; 
+    padding: 10px;
+  }
+
+  .about-img-wrapper-2 img {
+    width: 100%;
+    padding-right: 10px;
+  }
+
+
+/*
+=Navigation > Small Screen
+********************************************* */
+@media (max-width: 991.98px) {
+  .about-img-wrapper-2 {
+    flex: 0 0 100%; 
+  }
+
+}

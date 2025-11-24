@@ -1,0 +1,299 @@
+
+
+.hamburger {
+    display: none;
+    overflow-y: hidden;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+nav li {
+    color: rgb(103, 189, 158);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font: 400 16px/1.5 "Kanit", sans-serif;
+  } 
+  
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+  }
+
+.nav-wrapper {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.nav-toggle {
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+
+/*
+CHEVRON
+============================================ */
+/*
+style the chevron */
+.chevron {
+    position: absolute;
+    z-index: 2;
+    width: 35px;
+    height: 35px;
+    left: 80%;
+    transform: translateX(-50%);
+    transform: scale(80%);
+
+}
+
+/*
+Chevron Lines
+============================================ */
+/*
+style the lines */
+.chevron .rotate-wrapper::before,
+.chevron .rotate-wrapper::after {
+    content: "";
+    background-color: rgb(103, 189, 158);
+    width: 50%; height: 1.5px;
+    cursor:url("../Image/x_images/cursor.png"), auto; 
+}
+
+/*
+rotate the left line 45° clockwise + fine-tune its alignment */
+.chevron .rotate-wrapper::before {
+    transform: rotate( 45deg ) translate( 1.7px, -1.7px );
+}
+
+/*
+rotate the right line 45° anticlockwise + fine-tune its alignment */
+.chevron .rotate-wrapper::after {
+    transform: rotate( -45deg ) translate( -1.7px, -1.7px );
+
+}
+
+/*
+Label + Rotate Wrapper
+============================================ */
+/*
+style the label */
+.chevron label {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+/*
+style the rotate wrapper */
+.chevron .rotate-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.35s ease-in-out;
+}
+
+/*
+rotate the rotate wrapper 180° when the checkbox is checked */
+input:checked + .chevron .rotate-wrapper {
+    transform: rotate( 180deg );
+}
+
+/*
+SUBMENU 
+============================================ */
+/*
+style the submenu */ 
+.submenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-height: 0;
+    overflow-y: hidden;
+    top: 100%;
+    left: 50%;
+    width: 150%;
+
+    position: absolute;
+
+    transform: translateX(-25%);
+    transition: 0.35s ease-in-out;
+
+    border-radius: 4px;
+    background: rgba(235, 246, 237, 0.8);
+
+    z-index: 10; 
+}
+
+.submenu a {
+    font: 300 13px/1.5 "Kanit", sans-serif;
+    color: rgb(25, 78, 56); 
+    display: inline-block;
+    top: 100%;
+    left: 0;
+    transform: translateX(-25%);
+    padding: 10px 0;
+    border-bottom: 1px dashed rgb(103, 189, 158);
+}
+
+.last a {
+    border-bottom: none;
+}
+
+
+input:checked ~ .submenu a:hover {
+    color: rgb(29, 223, 168);
+    transition: 0.35s ease-in-out;
+}
+
+
+
+/*
+transition the accordion's text color + max height */
+input:checked ~ .submenu {
+    max-height: 100vh;
+}
+
+
+/*
+=Navigation > Small Screen
+********************************************* */
+@media (max-width: 1185px) {
+    /*
+    =Hamburger 
+    ============================================= */
+    /*
+    =display the hamburger */
+    .hamburger {
+        display: flex;
+        z-index: 26;
+        width: 26px;
+        height: 26px;
+       
+        position: relative;
+    
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chevron {
+        display: none;
+    }
+      
+    /*
+    =Nav Container
+    ============================================= */
+    /*
+    =style the nav */
+    nav {
+        position: fixed;
+        top: 0; left: -250px; 
+        width: 250px;
+        transition: 0.35s ease-in-out;
+    }
+
+    .nav-item {
+        padding: 20px 35px;
+        color: rgb(25, 78, 56);
+        border-bottom: 1px dashed rgb(103, 189, 158);
+    }
+
+    .nav-wrapper li:nth-child(1) {
+        border-top: 1px dashed rgb(103, 189, 158);
+    }
+
+    .nav-wrapper {
+        margin-top: 20px;
+    }
+         
+    /*
+    =display the nav when the hamburger is clicked */
+    #hamburger:checked ~ .hamburger ~ nav {
+        background-color: rgba(212, 229, 218, 0.9);
+        top: 0;
+        left: 0;
+        z-index: 25; 
+        height: 100vh;
+        width: 100%;
+      }
+
+
+      .nav-toggle:checked ~ .submenu {
+        max-height: 100vh;
+      }
+      
+      .nav-toggle:checked ~ .submenu a {
+        color: rgb(25, 78, 56);
+      }
+
+    /*
+    =Main Menu
+    ============================================= */
+    /*
+    =display the main menu in column formation */
+    .nav-wrapper {
+        flex-direction: column;
+        top: 0;
+        left: 0;
+    }
+      
+  
+    
+    /*
+    =add space between the first menu item and the top of the viewport */
+    .nav-wrapper > li:nth-child(1) {
+        margin-top: 50px;
+    }
+        
+    /*
+    =Dropdown Menu 
+    ============================================= */
+    /*
+    =style the dropdown menu */
+    .submenu {
+        position: revert;
+        transform: none;
+        width: auto;
+    }
+    
+    }
+    /* ========================================== */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+

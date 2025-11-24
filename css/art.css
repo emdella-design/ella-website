@@ -1,0 +1,143 @@
+
+.gallery {
+    margin-top: 30px;
+}
+
+.art-section-1 {
+    display: flex; 
+    flex-wrap: wrap;
+    margin: 0 auto; 
+    cursor:url("../Image/x_images/cursor.png"), auto; 
+}
+
+
+.column-1-2 {
+    display: flex; 
+    flex: 0 0 66.6666%;  
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto; 
+    justify-content: left;
+  }
+
+  .column-1-2 img {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .column-1-2-2 {
+    display: flex; 
+    flex: 0 0 33.3333%;  
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto; 
+    justify-content: left;
+  }
+
+  .column-1-2-2 img {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .column-3 {
+    display: flex; 
+    flex: 0 0 33.3333%;  
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto; 
+    justify-content: right;
+
+  }
+
+  .column-3 img {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .column-3-2 {
+    display: flex; 
+    flex: 0 0 66.6666%;  
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto; 
+    justify-content: right;
+
+  }
+
+  .column-3 img {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .art-wrapper-1 {
+    box-sizing: border-box;
+    margin: 0 auto; 
+  }
+
+  .art-wrapper-1 img {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .column-2 {
+    display: flex; 
+    flex: 0 0 33.3333%;  
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto; 
+    justify-content: left;
+  }
+
+
+
+figure {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+
+figcaption {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    padding: 20px;
+
+    height: 0;
+    left: 0;
+    bottom: 0;
+    transform: translate(0, -5px);
+    width: calc(100% - 10px);
+	
+    background-color: rgba(25, 78, 56, .9);
+    color: rgb(255, 255, 255);
+    font: 300 14px/1.5 "Kanit", sans-serif;
+    opacity: 0;
+    text-align: center;
+    z-index: 2;
+    word-spacing: 1px;
+
+	transition: 0.25s ease-in-out;
+
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    height: 50px;
+    transition: 0.25s ease-in-out;
+
+}
+
+
+/*Navigation > Small Screen
+********************************************* */
+@media (max-width: 991.98px) {
+
+  figcaption {
+    font: 300 12px/1.2 "Kanit", sans-serif;
+  }
+
+}
+
+

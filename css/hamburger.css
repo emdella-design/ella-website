@@ -1,0 +1,127 @@
+/*
+Module Name: Dynamic Hamburger 01
+Updated: 25.08.20 */
+
+/* 
+Checkbox
+============================================= */
+/*
+hide the checkbox */
+.inn-wrapper input {
+    display: none;
+}
+
+/*
+Hamburger Container
+============================================= */
+/*
+style the hamburger container */
+.hamburger {
+    width: 26px;
+    height: 26px;
+    margin-left: 30px;
+   
+    position: relative;
+
+    display: hidden;
+    justify-content: left;
+    align-items: center;
+    transform: scale(120%);
+
+
+}
+
+/*
+Hamburger Rotate Wrapper
+============================================= */
+/*
+style the rotate wrapper */
+.hamburger .rotate-wrapper {
+    width: 18px; height: 18px;
+
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+/*
+rotate the rotate wrapper 135° clockwise */
+input:checked + .hamburger .rotate-wrapper {
+    transform: rotate(135deg);
+}
+
+/*
+rotate the X a further 90° clockwise on hover */
+input:checked:hover + .hamburger .rotate-wrapper {
+    transform: rotate(225deg);
+}
+
+/*
+Hamburger Label
+============================================= */
+/*
+style the label */
+.hamburger label {
+    width: 26px; height: 26px;
+    position: absolute;
+    top: 0; left: 0; 
+    z-index: 10;
+    cursor: pointer;
+}
+
+/*
+Hamburger Lines
+============================================= */
+/*
+style the hamburger lines */
+.hamburger .line,
+.hamburger .line::before,
+.hamburger .line::after {
+    background-color: rgb(103, 189, 158);
+    height: 1.5px;
+    width: 100%;
+}
+
+/*
+create a new positioning context for the top + bottom lines */
+.hamburger .line {
+    position: relative;
+}
+
+/*
+position + transition the top + bottom lines */
+.hamburger .line::before, 
+.hamburger .line::after {
+    content: "";
+    position: absolute;
+    transition: 0.35s ease-in-out;
+}
+
+/*
+offset the top + bottom lines above + below the center line */
+.hamburger .line::before { top: -5px; }
+.hamburger .line::after { top: 5px; }
+
+/*
+rotate + reposition the top + bottom lines */
+input:checked + .hamburger .line::before,
+input:checked + .hamburger .line::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+/*
+fade out the bottom line upon completion of the X */
+input:checked + .hamburger .line::after {
+    opacity: 0;
+}
+
+/* ========================================== */
+
+
+
+
+
+
+
+

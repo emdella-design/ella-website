@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+     <!--HEADING -->
+     <head>
+        <!-- META DATA -->
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <!-- FAVICON -->
+         <link rel="shortcut icon" type="image/x-icon" href="../Image/x_images/favicon.png">
+
+         <!--PAGE TITLE-->
+         <title>Ella Daniels – Recipes: Collected and Created</title>
+         
+
+         <!-- PAGE LINKS -->
+         <link rel="stylesheet" href="../css/global.css">
+         <link rel="stylesheet" href="../css/media-queries.css">
+         <link rel="stylesheet" href="../css/nav.css">
+         <link rel="stylesheet" href="../css/hamburger.css">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    
+        
+
+         <!-- FONTS -->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">          
+          <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const toggles = document.querySelectorAll('.nav-toggle');
+        
+          toggles.forEach(toggle => {
+            const label = document.querySelector(`label[for="${toggle.id}"]`);
+        
+            label.addEventListener('click', function(e) {
+
+              if (toggle.checked) {
+                e.preventDefault(); 
+                toggle.checked = false;
+              }
+            });
+          });
+        });
+        </script>
+      <script>
+        document.addEventListener("mousemove", function(e) {
+          const sparkle = document.createElement("span");
+          sparkle.classList.add("mint-sparkle");
+          document.body.appendChild(sparkle);
+        
+          const size = Math.random() * 5 + 5; 
+          sparkle.style.width = size + "px";
+          sparkle.style.height = size + "px";
+          sparkle.style.left = e.pageX + "px";
+          sparkle.style.top = e.pageY + "px";
+          sparkle.style.setProperty("--scale", Math.random() * 0.4 + 0.9);
+        
+          sparkle.style.background = `
+            radial-gradient(circle,
+              #aad3be 0%,
+              #b8dcc7 30%,
+              #7eb99e 70%,
+              transparent 100%)
+          `;
+        
+          setTimeout(() => sparkle.remove(), 1600);
+        });
+        </script>
+         
+
+        <!--BODY -->
+        <body>
+             <!--PAGE WRAPPER-->
+            <main class="pgwrapper">
+
+                 <!--INNER WRAPPER -->
+                 <div class="inn-wrapper">
+         
+                    <header>
+
+                        <!-- HAMBURGER -->
+                        <input id="hamburger" type="checkbox">
+                        <div class="hamburger">
+                            <div class="rotate-wrapper"> <div class="line"></div> </div>
+                            <label for="hamburger"></label>
+                        </div>
+                        
+                           <!--PAGE HEADING-->
+                           <h1>
+                               <a href="../Image/index.html">Ella Daniels</a>
+                           </h1>
+
+                          
+
+                       <nav>
+                           <ul class="nav-wrapper">
+
+                               <!--NAV ITEM 1-->
+                               <li class="nav-item">
+                                   <a href="../Image/index.html">Design</a>
+                                   <input type="radio" id="toggle-design" name="toggle" class="nav-toggle">
+                                   <label for="toggle-design" class="chevron">
+                                       <span class="rotate-wrapper"></span>
+                                   </label>
+                                   <ul class="submenu">
+                                    <li><a href="../projs/proj1.html">Cipe Pineles – Artist Book</a></li>
+                                    <li><a href="../projs/proj2.html">Artbash 2026 Identity</a></li>
+                                    <li><a href="../projs/proj3.html">Mike's Pastry Redesign</a></li>
+                                    <li><a href="../projs/proj4.html">Recipes: Collected and Created</a></li>
+                                    <li><a href="../projs/proj5.html">Why You Should Own A House Plant</a></li>
+                                    <li class="last"><a href="../projs/proj6.html">Thrifted Clothing Archive</a></li>
+                                   </ul>
+                               </li>
+                         
+    
+                            <!--NAV ITEM 2 -->
+                               <li class="nav-item">
+                                   <a href="../archive/archive.html">Archive</a>
+                                   <input type="radio" id="toggle-archive" name="toggle" class="nav-toggle">
+                                   <label for="toggle-archive" class="chevron">
+                                       <span class="rotate-wrapper"></span>
+                                   </label>
+                                   <ul class="submenu">
+                                    <li><a href="../projs/archive1.html">Kokorokoko Logo</a></li>
+                                    <li><a href="../projs/archive2.html">Local Harvest Website Prototype</a></li>
+                                    <li><a href="../projs/archive3.html">Architecture Lecture Series</a></li>
+                                    <li><a href="../projs/archive4.html">Ocean Currents Infographic</a></li>
+                                    <li><a href="../projs/archive5.html">Design Your Destination</a></li>
+                                    <li class="last"><a href="../projs/archive6.html">A Summer of Art</a></li>
+                                   </ul>
+                               </li>
+
+                               <!--NAV ITEM 3 -->
+                               <li class="nav-item">
+                                   <a href="../art/art.html">Art</a>
+                                   <input type="radio" id="toggle-art" name="toggle" class="nav-toggle">
+                                   <label for="toggle-art" class="chevron">
+                                       <span class="rotate-wrapper"></span>
+                                   </label>
+                                   <ul class="submenu">
+                                       <li class="last"><a href="../art/art.html">Paintings & Drawings</a></li>
+                                   </ul>
+                               </li>
+
+                                <!--NAV ITEM 4 -->
+                               <li class="nav-item">
+                                   <a href="../about/about.html">About</a>
+                                   <input type="radio" id="toggle-about" name="toggle" class="nav-toggle">
+                                   <label for="toggle-about" class="chevron">
+                                       <span class="rotate-wrapper"></span>
+                                   </label>
+                                   <ul class="submenu">
+                                       <li><a href="#">Hi, I'm Ella! I am a graphic designer at the School of the Art Institute of Chicago. 
+                                       I have been in the design field for 3 years. I am interested in branding, art direction, 
+                                       and motion graphics.</a></li>
+                                       <li class="last"><a href="https://www.linkedin.com/in/ella-daniels-6514872a2/" target="_blank">LinkedIn</a></li>
+                                   </ul>
+                               </li>
+                       </nav>
+
+                       </header>
+
+                <!--HERO-->
+                <div class="section-1">
+
+                    <figure class="img-wrapper-1">
+                    <img src="../Image/x_images/recipe1.png" alt="">
+                    </figure>
+
+                    <figure class="background-img">
+                        <img src="../Image/x_images/recipe0.png" alt="">
+                    </figure>
+
+                </div>
+
+                <!--LABELS-->
+                <div class="desc">
+              
+                        <ul class="titles">
+                        <li class="main-title">RECIPE BOOK </li>
+                        <li> 6" x 9" </li>
+                        <li>Laser-print on Hammermill paper</li>
+                        <li>2024</li>
+                        </ul>
+                </div>
+                
+                <!--DESC-->
+                <section class="hidden">
+                <div class="text-wrapper">
+                    <p>
+                        This book is a collection of my favorite recipes that I have created or have been passed down to me. My personal 
+                        relationship with food has always been closely tied to community, and every dish here carries a story of the 
+                        people who shaped it. By gathering these recipes to create this book, I hope to share my love of cooking in a 
+                        way that feels welcoming, personal, and easy for anyone to enjoy.
+                     </p>
+                </div>
+
+                 <!--ADOBE ICONS-->
+                 <div class="adobe">
+                    <ul>
+                        <li><img src="../Image/x_images/illustrator.png" ></li>
+                        <li><img src="../Image/x_images/indesign.png"> </li>
+                        <li><img src="../Image/x_images/photoshop.png"></li>
+                    </ul>
+                </div>
+                </section>
+           
+        
+
+               <!--IMAGES-->
+               <section class="hidden">
+                <div class="section-2">
+                    <figure class="img-wrapper-2"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/recipe2.png"
+                    >
+                            <img class="left" src="../Image/x_images/recipe2-thumb.png" alt="">
+                    </figure>
+
+                    <figure class="img-wrapper-2"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/recipe3.png"
+                    >
+                            <img class="right" src="../Image/x_images/recipe3-thumb.png" alt="">
+                    </figure>
+                </div>
+               </section>
+
+               <section class="hidden">
+                <div class="section-2">
+                    <figure class="img-wrapper-2"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/recipe4.png"
+                    >
+                            <img class="left" src="../Image/x_images/recipe4-thumb.png" alt="">
+                    </figure>
+
+                    <figure class="img-wrapper-2"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/recipe5.png"
+                    >
+                            <img class="right" src="../Image/x_images/recipe5-thumb.png" alt="">
+                    </figure>
+                </div>
+               </section>
+
+               <section class="hidden">
+                <div class="section-2">
+                    <figure class="img-wrapper-2"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/recipe6.png"
+                    >
+                            <img class="left" src="../Image/x_images/recipe6-thumb.png" alt="">
+                    </figure>
+
+                    <figure class="img-wrapper-2"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/recipe7.png"
+                    >
+                            <img class="right" src="../Image/x_images/recipe7-thumb.png" alt="">
+                    </figure>
+                </div>
+               </section>
+                        
+                <!--DESC-->
+                <section class="hidden">
+                <div class="text-wrapper">
+                        <p>
+                            Here are some of my artboards I created in Adobe Illustrator. As part of the process, I cooked and baked my recipes in order to photograph them 
+                            as references. Through this process I felt very connected to my recipes.
+                        </p>
+                </div>
+                </section>
+                
+                 <!--IMAGES-->
+                 <section class="hidden">
+                    <div class="section-2">
+                        <figure class="img-wrapper-2"
+                        data-fancybox="gallery"  
+					    data-src="../Image/x_images/recipe8.png"
+                        >
+                            <img class="left" src="../Image/x_images/recipe8.png" alt=""> 
+                        </figure>
+
+                        <figure class="img-wrapper-2"
+                        data-fancybox="gallery"  
+					    data-src="../Image/x_images/recipe9.png"
+                        >
+                             <img class="right" src="../Image/x_images/recipe9.png" alt="">
+                         </figure>
+
+                        <figure class="img-wrapper-2"
+                        data-fancybox="gallery"  
+					    data-src="../Image/x_images/recipe10.png"
+                        >
+                            <img class="left" src="../Image/x_images/recipe10.png" alt="">
+                         </figure>
+
+                        <figure class="img-wrapper-2"
+                        data-fancybox="gallery"  
+					    data-src="../Image/x_images/recipe11.png"
+                        >
+                            <img class="right" src="../Image/x_images/recipe11.png" alt=""> 
+                        </figure>
+                    </div>
+                 </section>
+                
+                    <!--DESC-->
+                    <section class="hidden">
+                    <div class="text-wrapper">
+                        <p>
+                            Here is the final result!
+                        </p>
+                    </div>
+                    
+                    <div class="section-1">
+                        <figure class="img-wrapper-1">
+                            <img src="../Image/x_images/recipe12.gif" alt=""> 
+                        </figure>
+                    </div>
+                    </section>
+
+                 <!--IMAGES-->
+                 <section class="hidden">
+                    <div class="section-2">
+                        <figure class="img-wrapper-2"
+                        data-fancybox="gallery"  
+					    data-src="../Image/x_images/recipe13.png"
+                        >
+                            <img class="left" src="../Image/x_images/recipe13.png" alt=""> 
+                        </figure>
+                        
+                        <figure class="img-wrapper-2"
+                        data-fancybox="gallery"  
+					    data-src="../Image/x_images/recipe14.png"
+                        >
+                            <img class="right" src="../Image/x_images/recipe14.png" alt="">
+                        </figure>
+                    <div>
+                    </section> 
+                    
+                 </div>
+
+                <!--BUTTON-->
+                <div class="button">
+                    <a href="proj5.html">Next Project</a>    
+                </div> 
+                </div>
+            </main> 
+            
+              <!--FOOTER -->
+            <footer>    
+                <p>&#x1FAB4 Hand coded by Ella Daniels &#x1FAB4</p>
+            </footer> 
+     </body>
+
+     <!-- JAVASCRIPT -->
+     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+     <script>
+       // documentation at https://fancyapps.com/fancybox/
+       Fancybox.bind("[data-fancybox]", {
+         // Transition effect when changing gallery items
+         Carousel: {
+           transition: "slide",
+         },
+         // Customize the toolbar
+         Toolbar: {
+           display: {
+             right: ["slideshow", "thumbs", "close"],
+           },
+         },
+       });
+     </script>
+             <script>
+                const sections = document.querySelectorAll('.hidden');
+        
+                const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target); 
+                    }
+                });
+                }, {
+                threshold: 0.2 
+                });
+        
+                sections.forEach(section => observer.observe(section));
+        </script>
+</html>

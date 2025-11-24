@@ -1,0 +1,45 @@
+
+/*
+=Media Queries
+============================================= */
+
+@media (max-width: 375.9px) {
+    .pgwrapper { padding: 40px 20px 60px; }
+    .inn-wrapper { padding: 0 20px; } 
+    .img-wrapper { flex: 0 0 100%; }
+    .sites { padding: 30px 0 0 0}
+    h1 { transform: translateX(-26px);  font: 800 30px/1.5 "Shrikhand", "sans-serif"; }
+} 
+
+
+@media (max-width: 575.9px) {
+    .pgwrapper { padding: 60px 20px 60px; }
+    .inn-wrapper { padding: 0 20px; } 
+    .img-wrapper { flex: 0 0 100%; }
+    .sites { padding: 30px 0 0 0}
+    h1 { transform: translateX(-26px); }
+
+} 
+
+
+ @media (min-width: 1024.9px) {
+    .pgwrapper { padding: 80px 200px 60px; }
+    .inn-wrapper { padding: 0 20px; } 
+    .img-wrapper { flex: 0 0 50%}
+    .sites { padding: 15px 0 0 0}
+    h1 { transform: translateX(-26px); }
+    
+} 
+
+/* medium screen > 768 px */
+ /* @media (min-width: 768px) {
+    .pgwrapper { padding: 0 60px 80px; }
+    .inn-wrapper { padding: 0 60px; }
+}   */
+
+/* large screen > 992 px */
+/* @media (min-width: 992px) {
+    .pgwrapper { padding: 0 100px 100px; }
+    .inn-wrapper { padding: 0 100px; }
+}   */
+

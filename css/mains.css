@@ -1,0 +1,66 @@
+/*Author: Ella Daniels*/
+
+
+/* ============= SITES ============= */
+
+.pgwrapper-mains {
+  margin: 0 auto; 
+  display: flow-root;
+  padding-top: 8%;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+
+.sites {
+  padding-top: 2%;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;  
+}
+
+.img-wrapper {
+  box-sizing: border-box;
+  flex: 0 0 50%;  
+  padding: 15px;
+  position: relative;
+  margin: 0;
+}
+
+.sites img {
+  width: 100%;
+  display: block;
+}
+
+.sites a:hover img {
+  opacity: 60%;
+  transition: 0.3s ease;
+  filter: blur(1px);
+}
+
+  /* ============= TEXT HEADINGS ============= */
+
+  .text {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color:rgba(25, 78, 56, .9);
+    color: rgb(255, 255, 255);
+    font: 300 16px/1.5 "Kanit", sans-serif;
+    border-radius: 10px;
+    opacity: 0;
+    padding: 10px;
+    text-align: center;
+    width: fit-content;
+    z-index: 2;
+  }
+
+  .sites a:hover .text {
+    opacity: 1;
+  }
+

@@ -1,0 +1,23 @@
+
+
+<!-- PAGE LINKS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+
+<!-- JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+  // documentation at https://fancyapps.com/fancybox/
+  Fancybox.bind("[data-fancybox]", {
+    // Transition effect when changing gallery items
+    Carousel: {
+      transition: "slide",
+    },
+    // Customize the toolbar
+    Toolbar: {
+      display: {
+        right: ["slideshow", "thumbs", "close"],
+      },
+    },
+  });
+</script>
