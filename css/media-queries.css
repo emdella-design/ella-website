@@ -12,7 +12,7 @@
 } 
 
 
-@media (max-width: 575.9px) {
+@media (max-width: 1023.8px) {
     .pgwrapper { padding: 60px 20px 60px; }
     .inn-wrapper { padding: 0 20px; } 
     .img-wrapper { flex: 0 0 100%; }
