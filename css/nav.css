@@ -15,8 +15,6 @@ nav {
 nav li {
     color: rgb(103, 189, 158);
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
     font: 400 16px/1.5 "Kanit", sans-serif;
   } 
   
@@ -24,8 +22,13 @@ nav li {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 25px;
+    padding: 0;
   }
+
+.nav-item > a {
+    padding: 25px;
+    display: block;
+}
 
 .nav-wrapper {
     position: relative;
@@ -124,17 +127,16 @@ style the submenu */
 .submenu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 
     max-height: 0;
     overflow-y: hidden;
     top: 100%;
-    left: 50%;
-    width: 150%;
+    left: 0;
+    width: max-content;
+    transform: none;
 
     position: absolute;
-
-    transform: translateX(-25%);
     transition: 0.35s ease-in-out;
 
     border-radius: 4px;
@@ -146,12 +148,15 @@ style the submenu */
 .submenu a {
     font: 300 13px/1.5 "Kanit", sans-serif;
     color: rgb(25, 78, 56); 
-    display: inline-block;
+    display: block;
+    transform: none;
     top: 100%;
     left: 0;
-    transform: translateX(-25%);
-    padding: 10px 0;
+    padding: 8px 5px;
+    margin: 0;
+    white-space: normal;
     border-bottom: 1px dashed rgb(103, 189, 158);
+    transform: translateX(-15%);
 }
 
 .last a {
