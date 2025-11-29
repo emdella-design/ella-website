@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
+     <!--HEADING -->
+     <head>
         <!-- META DATA -->
          <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1" />
+         <meta name="viewport" content="width=device-width, initial-scale=1">
 
          <!-- FAVICON -->
          <link rel="shortcut icon" type="image/x-icon" href="../Image/x_images/favicon.png">
 
          <!--PAGE TITLE-->
-         <title>Ella Daniels – Cipe Pineles Artist Book</title>
-         <a href="proj1.html" title="Cipe Pineles Artist Book"> </a>
+         <title>Ella Daniels – Artbash Identity 2026</title>
+         
 
          <!-- PAGE LINKS -->
          <link rel="stylesheet" href="../css/global.css">
+         <link rel="stylesheet" href="../css/media-queries.css">
          <link rel="stylesheet" href="../css/nav.css">
          <link rel="stylesheet" href="../css/hamburger.css">
-         <link rel="stylesheet" href="../css/media-queries.css">
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    
+        
 
          <!-- FONTS -->
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">          
-         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">          
+          <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
 
     <script>
@@ -49,7 +52,7 @@
           sparkle.classList.add("mint-sparkle");
           document.body.appendChild(sparkle);
         
-          const size = Math.random() * 5 + 5; 
+          const size = Math.random() * 5 + 5;
           sparkle.style.width = size + "px";
           sparkle.style.height = size + "px";
           sparkle.style.left = e.pageX + "px";
@@ -67,306 +70,372 @@
           setTimeout(() => sparkle.remove(), 1600);
         });
         </script>
+         
 
+        <!--BODY -->
+        <body>
+             <!--PAGE WRAPPER-->
+            <main class="pgwrapper">
+
+                 <!--INNER WRAPPER -->
+                 <div class="inn-wrapper">
+         
+                    <header>
+
+                        <!-- HAMBURGER -->
+                        <input id="hamburger" type="checkbox">
+                        <div class="hamburger">
+                            <div class="rotate-wrapper"> <div class="line"></div> </div>
+                            <label for="hamburger"></label>
+                        </div>
+                        
+                           <!--PAGE HEADING-->
+                           <h1>
+                               <a href="../index.html">Ella Daniels</a>
+                           </h1>
+
+                          
+
+                       <nav>
+                           <ul class="nav-wrapper">
+
+                               <!--NAV ITEM 1-->
+                               <li class="nav-item">
+                                   <a href="../index.html">Design</a>
+                                   <input type="radio" id="toggle-design" name="toggle" class="nav-toggle">
+                                   <label for="toggle-design" class="chevron">
+                                       <span class="rotate-wrapper"></span>
+                                   </label>
+                                   <ul class="submenu">
+                                    <li><a href="../projs/proj1.html">ArtBash Identity 2026</a></li>
+                                    <li><a href="../projs/proj2.html">Mike's Pastry Redesign</a></li>
+                                    <li><a href="../projs/proj3.html">Recipes: Collected and Created</a></li>
+                                    <li><a href="../projs/proj4.html">Kokorokoko Refresh</a></li>
+                                    <li><a href="../projs/proj5.html">Thrifted Clothing Archive</a></li>
+                                    <li class="last"><a href="../projs/proj6.html">Cipe Pineles – Artist Book</a></li>
+                                   </ul>
+                               </li>
+                         
     
-     <!--BODY -->
-     <body>
-        <!--PAGE WRAPPER-->
-       <main class="pgwrapper">
+                            <!--NAV ITEM 2 -->
+                               <li class="nav-item">
+                                   <a href="../archive/archive.html">Archive</a>
+                                   <input type="radio" id="toggle-archive" name="toggle" class="nav-toggle">
+                                   <label for="toggle-archive" class="chevron">
+                                       <span class="rotate-wrapper"></span>
+                                   </label>
+                                   <ul class="submenu">
+                                    <li><a href="../projs/archive1.html">Why You Should Own A House Plant</a></li>
+                                    <li><a href="../projs/archive2.html">Design Your Destination</a></li>
+                                    <li><a href="../projs/archive3.html">Local Harvest Website Prototype</a></li>
+                                    <li><a href="../projs/archive4.html">Architecture Lecture Series</a></li>
+                                    <li><a href="../projs/archive5.html">Ocean Currents Infographic</a></li>
+                                    <li class="last"><a href="../projs/archive6.html">A Summer of Art</a></li>
+                                   </ul>
+                               </li>
 
-            <!--INNER WRAPPER -->
-            <div class="inn-wrapper">
-    
-                <header>
+                               <!--NAV ITEM 3 -->
+                               <li class="nav-item">
+                                   <a href="../art/art.html">Art</a>
+                                   <input type="radio" id="toggle-art" name="toggle" class="nav-toggle">
+                                   <label for="toggle-art" class="chevron">
+                                       <span class="rotate-wrapper"></span>
+                                   </label>
+                                   <ul class="submenu">
+                                       <li class="last"><a href="../art/art.html">Paintings & Drawings</a></li>
+                                   </ul>
+                               </li>
 
-                    <!-- HAMBURGER -->
-                    <input id="hamburger" type="checkbox">
-                    <div class="hamburger">
-                        <div class="rotate-wrapper"> <div class="line"></div> </div>
-                        <label for="hamburger"></label>
-                    </div>
-                    
-                       <!--PAGE HEADING-->
-                       <h1>
-                           <a href="../index.html">Ella Daniels</a>
-                       </h1>
+                                <!--NAV ITEM 4 -->
+                               <li class="nav-item">
+                                   <a href="../about/about.html">About</a>
+                                   <input type="radio" id="toggle-about" name="toggle" class="nav-toggle">
+                                   <label for="toggle-about" class="chevron">
+                                       <span class="rotate-wrapper"></span>
+                                   </label>
+                                   <ul class="submenu">
+                                    <li><a href="about/about.html">Hi, I'm Ella! I am a graphic designer <br>
+                                        at the School of the Art Institute of Chicago. <br>
+                                        I have been in the design field for 3 years. <br> I am interested in branding, art direction, <br>
+                                        and motion graphics.</a></li>
+                                       <li class="last"><a href="https://www.linkedin.com/in/ella-daniels-6514872a2/" target="_blank">LinkedIn</a></li>
+                                   </ul>
+                               </li>
+                       </nav>
 
-                      
-
-                   <nav>
-                       <ul class="nav-wrapper">
-
-                           <!--NAV ITEM 1-->
-                           <li class="nav-item">
-                               <a href="../index.html">Design</a>
-                               <input type="radio" id="toggle-design" name="toggle" class="nav-toggle">
-                               <label for="toggle-design" class="chevron">
-                                   <span class="rotate-wrapper"></span>
-                               </label>
-                               <ul class="submenu">
-                                <li><a href="../projs/proj1.html">Cipe Pineles – Artist Book</a></li>
-                                <li><a href="../projs/proj2.html">Mike's Pastry Redesign</a></li>
-                                <li><a href="../projs/proj3.html">ArtBash Identity 2026</a></li>
-                                <li><a href="../projs/proj4.html">Recipes: Collected and Created</a></li>
-                                <li><a href="../projs/proj5.html">Why You Should Own A House Plant</a></li>
-                                <li class="last"><a href="../projs/proj6.html">Thrifted Clothing Archive</a></li>
-                               </ul>
-                           </li>
-                     
-
-                        <!--NAV ITEM 2 -->
-                           <li class="nav-item">
-                               <a href="../archive/archive.html">Archive</a>
-                               <input type="radio" id="toggle-archive" name="toggle" class="nav-toggle">
-                               <label for="toggle-archive" class="chevron">
-                                   <span class="rotate-wrapper"></span>
-                               </label>
-                               <ul class="submenu">
-                                <li><a href="../projs/archive1.html">Kokorokoko Logo</a></li>
-                                <li><a href="../projs/archive2.html">Design Your Destination</a></li>
-                                <li><a href="../projs/archive3.html">Local Harvest Website Prototype</a></li>
-                                <li><a href="../projs/archive4.html">Architecture Lecture Series</a></li>
-                                <li><a href="../projs/archive5.html">Ocean Currents Infographic</a></li>
-                                <li class="last"><a href="../projs/archive6.html">A Summer of Art</a></li>
-                               </ul>
-                           </li>
-
-                           <!--NAV ITEM 3 -->
-                           <li class="nav-item">
-                               <a href="../art/art.html">Art</a>
-                               <input type="radio" id="toggle-art" name="toggle" class="nav-toggle">
-                               <label for="toggle-art" class="chevron">
-                                   <span class="rotate-wrapper"></span>
-                               </label>
-                               <ul class="submenu">
-                                   <li class="last"><a href="../art/art.html">Paintings & Drawings</a></li>
-                               </ul>
-                           </li>
-
-                            <!--NAV ITEM 4 -->
-                           <li class="nav-item">
-                               <a href="../about/about.html">About</a>
-                               <input type="radio" id="toggle-about" name="toggle" class="nav-toggle">
-                               <label for="toggle-about" class="chevron">
-                                   <span class="rotate-wrapper"></span>
-                               </label>
-                               <ul class="submenu">
-                                <li><a href="about/about.html">Hi, I'm Ella! I am a graphic designer <br>
-                                    at the School of the Art Institute of Chicago. <br>
-                                    I have been in the design field for 3 years. <br> I am interested in branding, art direction, <br>
-                                    and motion graphics.</a></li>
-                                   <li class="last"><a href="https://www.linkedin.com/in/ella-daniels-6514872a2/" target="_blank">LinkedIn</a></li>
-                               </ul>
-                           </li>
-                   </nav>
-
-                   </header>
-
+                       </header>
 
                 <!--HERO-->
                 <div class="section-1">
+
                     <figure class="img-wrapper-1">
-                        <img class="hero" src="../Image/x_images/book1.png" alt="Hero image for Cipe Pineles Artist Book">
+                    <img src="../Image/x_images/artbash1.png" alt="Hero image for the ArtBash Identity showing the main event poster"> 
                     </figure>
                 </div>
 
+
                 <figure class="background-img">
-                    <img src="../Image/x_images/book0.png" alt="Background pattern for Cipe Pineles Artist Book">
+                    <img src="../Image/x_images/artbash0.png" alt="Background pattern for the ArtBash Identity">
                 </figure>
 
                 <!--LABELS-->
                 <div class="desc">
               
-                    <ul class="titles">
-                    <li class="main-title">CIPE PINELES ARTIST BOOK</li>
-                    <li>5.5" x 8.5"</li>
-                    <li>Perfect bound on Neenah paper</li>
-                    <li>2024</li>
+                        <ul class="titles">
+                        <li class="main-title">ARTBASH IDENTITY 2026</li>
+                        <li>26" x 36" Main Poster with 7 12" x 18" Event Posters</li>
+                        <li>Matte Inkjet Print</li>
+                        <li>2025</li>
+                        </ul>
+                </div>
+                
+                <!--DESC-->
+                <section class="hidden">
+                <div class="text-wrapper">
+                    <p>
+                        ArtBash is a celebratory exhibition in the Spring for Contemporary Practices (CP) students in their first year of undergraduate studies at the School of the Art Institute of Chicago (SAIC).  
+                        For this client, it is integral to showcase an identity that works across a wide interdisciplinary range of artistic media that appeals and relates to all CP students. 
+                        <br>
+                        <br>
+                        <span class="text-wrapper-subheading">INSIGHT</span>
+                        <br>
+                        First-year art students are simultaneously expressive and highly impressionable. The goal was to encapsulate raw expression meeting malleable environment. CP classes are a time for students to discover their 
+                        individuality within their work. It is a time for exploration and experimentation. 
+                        Within these classes students are being bold and exploratory, yet they also have the ability to be shaped and molded. For the ArtBash identity, 
+                        the energetic quality of the paint shows bursting expression, while the smooth gradient in the background calls back to the environment in which the students are being shaped. 
+                        The contrast between the gradient and the brush strokes create a dynamic that is bold, unbound, and complex.
+                        <br>
+                        <br>
+                        <span class="text-wrapper-subheading">TARGET AUDIENCE</span>
+                        <br>
+                        CP students, SAIC students & faculty, art lovers, general public.
+                        <br>
+                        <br>
+                        <span class="text-wrapper-subheading">DELIVERABLES</span>
+                        <br>
+                         ArtBash identity including one main event poster, 7 due date posters, social media & OOH advertising, wayfinding.
+                     </p>
+                </div>
+
+                 <!--ADOBE ICONS-->
+                 <div class="adobe">
+                    <ul>
+                        <li><img src="../Image/x_images/illustrator.png" alt="Adobe Illustrator Logo"></li>
+                        <li><img src="../Image/x_images/indesign.png"  alt="Adobe InDesign Logo"></li>
+                        <li><img src="../Image/x_images/photoshop.png"  alt="Adobe Photoshop Logo"></li>
+                        <li><img src="../Image/x_images/aftereffects.png"  alt="Adobe After Effects Logo"></li>
                     </ul>
-            </div>
+                </div>
+                </section>
+           
+        
 
-            <!--DESC-->
-        <section class="hidden">
-            <div class="text-wrapper">
-                <p>
-                This artist book, highlighting graphic designer Cipe Pineles, was created to showcase the designer's life and the accomplishments
-                throughout her career. As a pioneer for graphic design in the 1900s with elegant layout and editorial design, Cipe Pineles is a creative that I admire. 
-                With this artist book the typographic style is intended to represent the magazine editorial look while also incorporating her rustic 
-                gouache illustrations. This book includes font matter, a timeline, and back matter that is structured around a 
-                grid system. The timeline is extended across the book which breaks into page headers to represent the length and 
-                quality of the Pineles' career. The result – a "mini-magazine" style book which spans 58 total spreads.
-                 </p>
-            </div>
-
-             <!--ADOBE ICONS-->
-             <div class="adobe">
-                <ul>
-                    <li><img src="../Image/x_images/illustrator.png" alt="Adobe Illustrator Logo"></li>
-                    <li><img src="../Image/x_images/indesign.png" alt="Adobe InDesign Logo"></li>
-                    <li><img src="../Image/x_images/photoshop.png" alt="Adobe Photoshop Logo"></li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="hidden">
-
-            <div class="section-4">
-
-                <figure class="img-wrapper-4"
-                data-fancybox="gallery"  
-                data-src="../Image/x_images/book2.png"
-                >
-                        <img class="left" src="../Image/x_images/book2-thumb.png" alt="Pages 8 and 9"> 
-                </figure>
-
-                <figure class="img-wrapper-4"
-                data-fancybox="gallery"  
-                data-src="../Image/x_images/book3.png"
-                >
-                        <img src="../Image/x_images/book3-thumb.png" alt="Pages 10 and 11"> 
-                </figure>
-
-                <figure class="img-wrapper-4"
-                data-fancybox="gallery"  
-                data-src="../Image/x_images/book4.png"
-                >
-                        <img src="../Image/x_images/book4-thumb.png" alt="Pages 14 and 15"> 
-                </figure>
-
-                <figure class="img-wrapper-4"
-                data-fancybox="gallery"  
-                data-src="../Image/x_images/book5.png"
-                >
-                        <img class="right" src="../Image/x_images/book5-thumb.png" alt="Pages 16 and 17"> 
-                </figure>
-
-                <figure class="img-wrapper-4"
-                data-fancybox="gallery"  
-                data-src="../Image/x_images/book6.png"
-                >
-                        <img class="left" src="../Image/x_images/book6-thumb.png" alt="Pages 30 and 31"> 
-                </figure>
-
-                <figure class="img-wrapper-4"
-                data-fancybox="gallery"  
-                data-src="../Image/x_images/book7.png"
-                >
-                        <img src="../Image/x_images/book7-thumb.png" alt="">
-                </figure>
-
-                <figure class="img-wrapper-4"
-                data-fancybox="gallery"  
-                data-src="../Image/x_images/book8.png"
-                >
-                        <img src="../Image/x_images/book8-thumb.png" alt="Pages 38 and 39"> 
-                </figure>
-
-                <figure class="img-wrapper-4"
-                data-fancybox="gallery"  
-                data-src="../Image/x_images/book9.png"
-                >
-                        <img class="right" src="../Image/x_images/book9-thumb.png" alt="Pages 40 and 41"> 
-                </figure>
-
-
-            </div>
-        </section>
-
-
-        <section class="hidden">
-            <div class="section-1">
-                <figure class="img-wrapper-1"
-                data-fancybox="gallery"  
-                data-src="../Image/x_images/book10.png"
-                >
-                    <img src="../Image/x_images/book10.png" alt="Timeline spreads">
-                </figure>
-            </div>
-        </section>
-
-        <section class="hidden">
-            <div class="section-1">
-                <figure class="img-wrapper-1">
-                    <img src="../Image/x_images/book11.gif" alt="A gif of all of the pages">
-                </figure>
-            </div>
-        </section>
-
-
-        <section class="hidden">
-            <div class="section-1">
-                <figure class="img-wrapper-1"
-                data-fancybox="gallery"  
-                data-src="../Image/x_images/book12.png"
-                >
-                    <img src="../Image/x_images/book12.png" alt="A stack of books showing the cover page">
-                </figure>
-            </div>
-
-            <section class="hidden">
-                <div class="section-2">
-                    <figure class="img-wrapper-2"
-                    data-fancybox="gallery"  
-					data-src="../Image/x_images/book13.png"
-                    >
-                            <img class="left" src="../Image/x_images/book13.png" alt="">
+               <!--IMAGES-->
+               <section class="hidden">
+                <div class="section-1">
+                    <figure class="img-wrapper-1">
+                            <img src="../Image/x_images/artbash2.png" alt="The meta composition of all 7 event posters and the main event poster">  
                     </figure>
+                </div>
 
-                    <figure class="img-wrapper-2"
-                    data-fancybox="gallery"  
-					data-src="../Image/x_images/book14.png"
-                    >
-                            <img class="right" src="../Image/x_images/book14.png" alt="">
-                    </figure>
+                <!--DESC-->
+                <div class="text-wrapper">
+                    <p>
+                        Here are the multiple iterations that led to the finals:
+                    </p>
                 </div>
                </section>
 
-            <!--BUTTON-->
-            <div class="button">
-                <a href="proj2.html">Next Project</a>    
-            </div>  
+                
+            <section class="hidden">
+                <div class="section-4">
 
-        </section>
-            </div>
-       </main>
-
-        <!--FOOTER -->
-        <footer>    
-            <p>&#x1FAB4 Hand coded by Ella Daniels &#x1FAB4</p>
-        </footer> 
-
-    </body>
-    <!-- JAVASCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script>
-      // documentation at https://fancyapps.com/fancybox/
-      Fancybox.bind("[data-fancybox]", {
-        // Transition effect when changing gallery items
-        Carousel: {
-          transition: "slide",
-        },
-        // Customize the toolbar
-        Toolbar: {
-          display: {
-            right: ["slideshow", "thumbs", "close"],
-          },
-        },
-      });
-    </script>
-        <script>
-            const sections = document.querySelectorAll('.hidden');
+                    <figure class="img-wrapper-4"
+                    data-fancybox="gallery"  
+                    data-src="../Image/x_images/artbash9.png"
+                    >
+                        <img class="left" src="../Image/x_images/artbash9-thumb.png" alt=""> 
+                    </figure>
     
-            const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target); 
-                }
-            });
-            }, {
-            threshold: 0.2 
-            });
+                    <figure class="img-wrapper-4"
+                    data-fancybox="gallery"  
+                    data-src="../Image/x_images/artbash10.png"
+                    >
+                        <img src="../Image/x_images/artbash10-thumb.png" alt="">
+                    </figure>
     
-            sections.forEach(section => observer.observe(section));
-    </script>
+                    <figure class="img-wrapper-4"
+                    data-fancybox="gallery"  
+                    data-src="../Image/x_images/artbash11.png"
+                    >
+                        <img src="../Image/x_images/artbash11-thumb.png" alt="">
+                    </figure>
+    
+                    <figure class="img-wrapper-4"
+                    data-fancybox="gallery"  
+                    data-src="../Image/x_images/artbash12.png"
+                    >
+                        <img class="right"src="../Image/x_images/artbash12-thumb.png" alt=""> 
+                    </figure>
+    
+                    <figure class="img-wrapper-4"
+                    data-fancybox="gallery"  
+                    data-src="../Image/x_images/artbash13.png"
+                    >
+                        <img class="left" src="../Image/x_images/artbash13-thumb.png" alt=""> 
+                    </figure>
+    
+                    <figure class="img-wrapper-4"
+                    data-fancybox="gallery"  
+                    data-src="../Image/x_images/artbash14.png"
+                    >
+                        <img src="../Image/x_images/artbash14-thumb.png" alt="">
+                    </figure>
+    
+                    <figure class="img-wrapper-4"
+                    data-fancybox="gallery"  
+                    data-src="../Image/x_images/artbash15.png"
+                    >
+                        <img src="../Image/x_images/artbash15-thumb.png" alt=""> 
+                    </figure>
+    
+                    <figure class="img-wrapper-4"
+                    data-fancybox="gallery"  
+                    data-src="../Image/x_images/artbash16.png"
+                    >
+                        <img class="right" src="../Image/x_images/artbash16-thumb.png" alt="">
+                    </figure>
+    
+                    <figure class="img-wrapper-4"
+                    data-fancybox="gallery"  
+                    data-src="../Image/x_images/artbash17.png"
+                    >
+                        <img class="left" src="../Image/x_images/artbash17-thumb.png" alt="">
+                    </figure>
+    
+                    <figure class="img-wrapper-4"
+                    data-fancybox="gallery"  
+                    data-src="../Image/x_images/artbash18.png"
+                    >
+                        <img src="../Image/x_images/artbash18-thumb.png" alt=""> 
+                    </figure>
+    
+                    <figure class="img-wrapper-4"
+                    data-fancybox="gallery"  
+                    data-src="../Image/x_images/artbash19-thumb.png"
+                    >
+                        <img src="../Image/x_images/artbash19.png" alt=""> 
+                    </figure>
+    
+                    <figure class="img-wrapper-4"
+                    data-fancybox="gallery"  
+                    data-src="../Image/x_images/artbash20.png"
+                    >
+                        <img class="right" src="../Image/x_images/artbash20-thumb.png" alt=""> 
+                    </figure>
+    
+                 </div>
+            </section>
+
+                <div class="section-1">
+                    <figure class="img-wrapper-1"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/artbash4.png"
+                    >
+                            <img src="../Image/x_images/artbash4.png" alt=""> 
+                    </figure>
+                </div>
+            </section>
+
+            <section class="hidden">
+                <div class="section-1">
+                    <figure class="img-wrapper-1"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/artbash3.png"
+                    >
+                            <img src="../Image/x_images/artbash3.png" alt="">
+                    </figure>
+                </div>
+
+            <section class="hidden">
+                <div class="section-1">
+                    <figure class="img-wrapper-1"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/artbash5.png"
+                    >
+                            <img src="../Image/x_images/artbash5.png" alt=""> 
+                    </figure>
+                </div>
+
+                <div class="section-1">
+                    <figure class="img-wrapper-1"
+                    data-fancybox="gallery"  
+					data-src="../Image/x_images/artbash6.png"
+                    >
+                            <img src="../Image/x_images/artbash6.png" alt=""> 
+                    </figure>
+                </div>
+            </section>
+
+            <section class="hidden">
+                <div class="section-1">
+                        <video autoplay muted loop controls><source src="../Image/x_images/artbash7.mp4" type="video/mp4"></video>
+                </div>
+
+                <div class="section-1">
+                        <video autoplay muted loop controls><source src="../Image/x_images/artbash8.mp4" type="video/mp4"></video>
+              
+                </div>
+         
+            
+                    
+                 </div>
+
+                <!--BUTTON-->
+                <div class="button">
+                    <a href="proj2.html">Next Project</a>    
+                </div>  
+            </section>
+
+            </main> 
+            
+              <!--FOOTER -->
+            <footer>    
+                <p>&#x1FAB4 Hand coded by Ella Daniels &#x1FAB4</p>
+            </footer> 
+     </body>
+
+     <!-- JAVASCRIPT -->
+     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+     <script>
+       // documentation at https://fancyapps.com/fancybox/
+       Fancybox.bind("[data-fancybox]", {
+         // Transition effect when changing gallery items
+         Carousel: {
+           transition: "slide",
+         },
+         // Customize the toolbar
+         Toolbar: {
+           display: {
+             right: ["slideshow", "thumbs", "close"],
+           },
+         },
+       });
+     </script>
+             <script>
+                const sections = document.querySelectorAll('.hidden');
+        
+                const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target); 
+                    }
+                });
+                }, {
+                threshold: 0.2 
+                });
+        
+                sections.forEach(section => observer.observe(section));
+        </script>
 </html>

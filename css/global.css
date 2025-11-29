@@ -264,7 +264,12 @@ video {
 
 }
 
+.buttons {
+  display: flex;
+}
+
 .button {
+    justify-content: space-between;
     text-align: center;
     margin: 10px auto;
     padding: 10px;
