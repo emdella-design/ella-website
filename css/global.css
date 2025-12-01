@@ -264,24 +264,32 @@ video {
 
 }
 
+
 .buttons {
   display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px auto;  
 }
 
 .button {
-    justify-content: space-between;
     text-align: center;
-    margin: 10px auto;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 20px;
     background-color: rgb(25, 78, 56); 
-    border-radius: 10px;
-    max-width: 150px;
+    border-radius: 50px;
+    max-width: 200px;
+    margin: 0;
 }
 
 .button a {
   display: inline-block;
   color: rgb(255, 255, 255);
   font: 300 16px/1.5 "Kanit", sans-serif;
+  min-width: 140px;
 
 }
 
