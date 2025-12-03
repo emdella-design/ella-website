@@ -264,6 +264,12 @@ video {
 
 }
 
+.dash {
+  font-size: 48px;
+  color: rgb(103, 189, 158);
+  margin: 20px 0;
+}
+
 
 .buttons {
   display: flex;
