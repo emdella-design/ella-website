@@ -130,7 +130,7 @@ cursor:url("../Image/x_images/cursor.png"), auto;
   .img-wrapper-2 {
     box-sizing: border-box;
     flex: 0 0 50%;  
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 
   .img-wrapper-2 img.left {
@@ -208,6 +208,35 @@ video {
   margin: 0 auto;
 }
 
+
+.img-hover {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 60%;
+}
+
+.img-hover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.img-hover .hover {
+  opacity: 0;
+}
+
+.img-hover:hover .hover {
+  opacity: 1;
+}
+
+.img-hover:hover .default {
+  opacity: 0;
+}
   
 /* ============= TEXT ============= */
 
